@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Suresh | Splunk Engineer</title>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: 0.3s;
+    background: #f4f6f8;
+    color: #111;
+}
+
+.dark {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: white;
+    margin-top: 10px;
+}
+
+/* ---------- BUTTON ---------- */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ---------- SECTION ---------- */
+section {
+    padding: 40px;
+}
+
+/* ---------- GRID ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dark .card {
+    background: #1e293b;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- ICON ---------- */
+.icon {
+    font-size: 24px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* ---------- ANIMATION ---------- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- PROJECT ---------- */
+.project {
+    border-left: 5px solid #2563eb;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="toggle-btn" onclick="toggleMode()">🌙</button>
+
+<header>
+    <h1>Suresh</h1>
+    <p>Splunk Engineer | Troubleshooting | Performance Optimization</p>
+    <img src="profile.jpg" class="profile-pic">
+</header>
+
+<!-- 🔹 SKILLS -->
+<section>
+    <h2>Splunk Expertise</h2>
+
+    <div class="grid">
+
+        <div class="card fade-in">
+            <div class="icon"><i class="fas fa-server"></i></div>
+            <h3>Administration and Clustering</h3>
+            <p>Deployment Server, Forwarders, License Management, Indexer cluster, Search head cluster, multisite cluster configuration, deployer, cluster Manager</p>
+        </div>
+
+        <div class="card fade-in">
+            <div class="icon"><i class="fas fa-database"></i></div>
+            <h3>Data Ingestion</h3>
+            <p>inputs.conf, props.conf, transforms.conf, Fishbucket</p>
+        </div>
+
+        <div class="card fade-in">
+            <div class="icon"><i class="fas fa-search"></i></div>
+            <h3>SPL & Search</h3>
+            <p>Efficient queries, optimization, joins, stats</p>
+        </div>
+
+        <div class="card fade-in">
+            <div class="icon"><i class="fas fa-bug"></i></div>
+            <h3>Troubleshooting</h3>
+            <p>splunkd.log, metrics.log, search issues</p>
+        </div>
+
+        <div class="card fade-in">
+            <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
+            <h3>Performance</h3>
+            <p>IOPS, pipeline tuning, indexing optimization</p>
+        </div>
+
+        <div class="card fade-in">
+            <div class="icon"><i class="fas fa-terminal"></i></div>
+            <h3>Linux</h3>
+            <p>iostat, vmstat, system monitoring</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 🔹 PROJECTS -->
+<section>
+    <h2>Projects & Case Studies</h2>
+
+    <div class="grid">
+
+        <div class="card project fade-in">
+            <h3>Inconsistent Search Results</h3>
+            <p>Resolved indexer peer issue causing incomplete results.</p>
+            <ul>
+                <li>Analyzed ResultsCollationProcessor errors</li>
+                <li>Identified failing indexer</li>
+                <li>Improved search consistency</li>
+            </ul>
+        </div>
+
+        <div class="card project fade-in">
+            <h3>Indexer Performance Optimization</h3>
+            <p>Improved ingestion throughput using pipeline tuning.</p>
+            <ul>
+                <li>Configured parallelIngestionPipelines</li>
+                <li>Analyzed IOPS using iostat</li>
+                <li>Reduced ingestion delay</li>
+            </ul>
+        </div>
+
+        <div class="card project fade-in">
+            <h3>Fishbucket Analysis</h3>
+            <p>Resolved ingestion inconsistencies.</p>
+            <ul>
+                <li>Investigated CRC tracking</li>
+                <li>Prevented duplicate logs</li>
+                <li>Improved reliability</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Suresh | Splunk Portfolio</p>
+</footer>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
