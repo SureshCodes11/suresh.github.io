@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suresh Jatavath | Splunk Engineer</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8fafc;
+    color: #111827;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6b7280;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: white;
+    margin-top: 0px;
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background: #2563eb;
+}
+
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.dark .card {
+    background: #1e293b;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ---------- GRID ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ---------- ICON ---------- */
+.icon {
+    font-size: 20px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #e0e7ff;
+}
+
+/* Profile image styling (better contrast on blue) */
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: white;
+    padding: 0px;
+    margin-top: 15px;
+    border: 0px solid white;
+}
+
+/* Buttons look better on blue */
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2563eb;
+    background: white;
+    font-weight: 500;
+}
+.profile-pic {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" onclick="toggleMode()">🌙</div>
+
+<header class="hero">
+    <h1>Suresh Jatavath</h1>
+    <p>Splunk Engineer | Troubleshooting | Performance Optimization</p>
+
+    <img src="profile.jpg" class="profile-pic">
+
+    <div>
+        <a href="mailto:sureshjatavath63@gmail.com" class="btn">Email</a>
+        <a href="https://www.linkedin.com/in/suresh-jatavath-aa7761255/" target="_blank" class="btn">LinkedIn</a>
+    </div>
+</header>
+
+<div class="container">
+
+<!-- EXPERIENCE -->
+<h2>Experience</h2>
+
+<div class="card">
+    <h3>System Engineer (Splunk) — IOPEX Technologies</h3>
+    <p><strong>April 2024 – Present</strong></p>
+    <ul>
+        <li>Developing dashboards, alerts, and reports using SPL</li>
+        <li>Managing clustered Splunk environments</li>
+        <li>Troubleshooting ingestion and search issues</li>
+        <li>Performance optimization and monitoring</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h3>Intern — CareerX</h3>
+    <p><strong>March 2023 – April 2024</strong></p>
+    <ul>
+        <li>Worked on Linux and Splunk configurations</li>
+        <li>Handled environment setup and maintenance</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h3>Training — Scaler</h3>
+    <ul>
+        <li>Linux, C/C++, Operating Systems</li>
+        <li>Monitoring concepts & Data Structures</li>
+    </ul>
+</div>
+
+<!-- SKILLS -->
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon"><i class="fas fa-server"></i></div>
+<h3>Core Splunk</h3>
+<p>Architecture, Data Ingestion, SPL, Index Management, Dashboards, Alerts, CLI, REST API</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Security</h3>
+<p>RBAC, LDAP/SAML, Correlation Searches, Incident Analysis</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fas fa-network-wired"></i></div>
+<h3>Platform</h3>
+<p>Clustering, Deployment Server, Forwarder Management, Queue Monitoring</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fas fa-tools"></i></div>
+<h3>Tools</h3>
+<p>Git, GitLab, VS Code, MongoDB</p>
+</div>
+
+</div>
+
+<!-- PROJECTS -->
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Built End-to-End Splunk Environment</h3>
+<ul>
+<li>Configured UF, HF, Deployment Server, License Manager</li>
+<li>Implemented Indexer Cluster & Search Head Cluster</li>
+<li>Configured Monitoring Console</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Data Ingestion & Time Manipulation</h3>
+<ul>
+<li>Onboarded logs using Universal Forwarders</li>
+<li>Handled timestamp parsing and TZ adjustments in props.conf</li>
+</ul>
+</div>
+
+<!-- CERTIFICATIONS -->
+<h2>Certifications</h2>
+
+<div class="card">
+<ul>
+<li>Splunk Core Certified User</li>
+<li>Splunk Core Certified Power User</li>
+<li>Troubleshooting Splunk Enterprise</li>
+</ul>
+
+<br>
+<a href="SplunkCoreCertifiedPowerUser_Badge20260331-31-r1w78k.pdf" class="btn" target="_blank">
+    View Certification PDF
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Suresh Jatavath | Splunk Portfolio</p>
+</footer>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
