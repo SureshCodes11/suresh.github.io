@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Splunk Project Gallery</title>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 40px;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Splunk Project Gallery</h1>
+
+<div class="gallery-grid">
+
+<img src="images/splunk1.png">
+<img src="images/splunk2.png">
+<img src="images/splunk3.png">
+<img src="images/splunk4.png">
+<img src="images/splunk5.png">
+
+</div>
+
+</body>
+</html>
